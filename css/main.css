@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+
+:root {
+    --primary: #0d6efd;
+    --dark: #21252f;
+    --body: #888;
+    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: Sora, "sans-serif";
+}
+
+h1, h2, h3, h4, h5, h6, display-4 {
+    color: var(--dark);
+    font-weight: 700 !important;
+}
+
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.navbar {
+    box-shadow: var(--box-shadow);
+}
+
+.navbar .logo {
+    height: 50px;
+}
+
+.navbar .nav-link {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.btn {
+    padding: 14px 18px;
+    border-width: 2px;
+    border-radius: 0;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+}
+
+.seccion {
+    position: relative;
+    padding: 100px 0px;
+}
+
+.busqueda {
+    margin-bottom: 40px;
+    margin-top: -55px;
+}
+
+.form-input-group {
+    position: relative;
+}
+
+.form-input-group input {
+    height: 70px;
+}
+
+.form-input-group button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.login {
+    position: relative;
+    background:linear-gradient(90deg, #fff 55%, rgba(236,236,243,0.6) 45%);
+    display: flex;
+    height: 100vh;
+}
+
+.puntos .puntos-1 {
+    position: absolute;
+    top: 85px;
+    left: 0;
+}
+
+.puntos .puntos-2 {
+    position: absolute;
+    bottom: 100px;
+    right: 0
+}
+
+.iconbox {
+    height: 70px;
+    width: 70px;
+    margin: auto;
+}
+
+.servicio {
+    border: 1.5px solid #ebebf2;
+    border-radius: 5px;
+    text-align: center;
+    padding: 60px 0px;
+    background-color: #ffffff;
+}
+
+.copy {
+    border-top: 1px solid #4b4b57;
+}
+
+.mt--5 {
+    margin-top: -110px;
+}
+
+.filtros .accordion-item {
+    border: 0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 0 24px;
+}
+
+.filtros .accordion-button {
+    background-color: transparent;
+}
+
+.etiquetas {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.etiquetas li {
+    display: inline-block;
+    margin: 0 .3em .3em 0;
+    padding: 0;
+}
+
+.etiquetas li a {
+    display: inline-block;
+    max-width: 100px;
+    padding: 0.5em 1em;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 3px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.border-w-50 {
+    border: 15px solid #ffffff;
+    border-radius: 10px;
+}
+
+@media (max-width: 574px) {
+    .login {
+        background:#fff
+    }
+}
