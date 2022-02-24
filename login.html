@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidad MIDIS</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo_midis.png" alt="logo_midis.png" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="g-2 ms-auto">
+                        <button type="button" class="btn btn-outline-dark">Iniciar Sesión</button>
+                        <button type="button" class="btn btn-primary">Registrar</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <seccion class="seccion login">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-5 order-2 order-lg-1">
+                    <div>
+                        <h2>Inicia Sesión</h2>
+                        <p class="small my-4">Completa tus datos para registrarte en nuestra plataforma y obtener
+                            beneficios como biblioteca cursos y demas cosas.</p>
+                        <form action="#">
+                            <div class="mb-4">
+                                <label for="email" class="form-label">Usuario</label>
+                                <input type="email" class="form-control form-control-lg" name="username"
+                                    placeholder="Escriba su número de documento">
+                            </div>
+                            <div class="mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <label for="password" class="form-label">Contraseña</label>
+                                    <a href="#" class="text-decoration-none">¿Olvidó su contraseña?</a>
+                                </div>
+                                <input type="password" class="form-control form-control-lg" name="password"
+                                    placeholder="Escriba su contraseña">
+                            </div>
+                            <div class="mb-4 d-grid">
+                                <a href="index.html" class="btn btn-primary text-uppercase">Ingresar</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-7 order-1 order-lg-2">
+                    <div>
+                        <img class="w-100" src="images/comunidad_banner.png" alt="comunidad_banner.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </seccion>
+    <div class="puntos d-none d-lg-block">
+        <img class="img-fluid puntos-1" src="images/dots-img-10.png" alt="dots-img-10.png">
+        <img class="img-fluid puntos-2" src="images/dots-img-07.png" alt="dots-img-07.png">
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
