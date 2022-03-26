@@ -9,72 +9,66 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
+    <!--
+        <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    -->
+
     <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" crossorigin="anonymous">
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo_midis.png" alt="logo_midis.png" class="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="bi bi-list fs-1"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="g-2 ms-auto">
-                        <button type="button" class="btn btn-outline-dark">Iniciar Sesión</button>
-                        <button type="button" class="btn btn-primary">Registrar</button>
-                    </div>
-                </div>
+<body class="fondo-login">
+    <div id="cabecera" class="d-flex align-items-center bg-white">
+        <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+            <div class="d-none d-md-block">
+                <img src="images/logo_midis.png" alt="Logo MIDIS">
+                <img src="images/identidad_visual.jpeg" alt="Siempre Con el Pueblo">
             </div>
-        </nav>
-    </header>
-    <seccion class="seccion login">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-5 order-2 order-lg-1">
-                    <div>
-                        <h2>Inicia Sesión</h2>
-                        <p class="small my-4">Completa tus datos para registrarte en nuestra plataforma y obtener
-                            beneficios como biblioteca cursos y demas cosas.</p>
-                        <form action="#">
-                            <div class="mb-4">
-                                <label for="email" class="form-label">Usuario</label>
-                                <input type="email" class="form-control form-control-lg" name="username"
-                                    placeholder="Escriba su número de documento">
-                            </div>
-                            <div class="mb-4">
-                                <div class="d-flex justify-content-between">
-                                    <label for="password" class="form-label">Contraseña</label>
-                                    <a href="#" class="text-decoration-none">¿Olvidó su contraseña?</a>
-                                </div>
-                                <input type="password" class="form-control form-control-lg" name="password"
-                                    placeholder="Escriba su contraseña">
-                            </div>
-                            <div class="mb-4 d-grid">
-                                <a href="index.html" class="btn btn-primary text-uppercase">Ingresar</a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-7 order-1 order-lg-2">
-                    <div>
-                        <img class="w-100" src="images/comunidad_banner.png" alt="comunidad_banner.png">
-                    </div>
-                </div>
+            <div>
+                <img src="images/logo_comunidadmidis.jpg" alt="Logo MIDIS">
             </div>
         </div>
-    </seccion>
-    <div class="puntos d-none d-lg-block">
-        <img class="img-fluid puntos-1" src="images/dots-img-10.png" alt="dots-img-10.png">
-        <img class="img-fluid puntos-2" src="images/dots-img-07.png" alt="dots-img-07.png">
     </div>
+    <div id="contenido">
+        <div id="login" class="bg-white m-auto">
+            <div>
+                <h1 class="titulo-login">Inicia Sesión</h1>
+                <p class="text-center">Completa los datos para registrarte en nuestra plataforma y obtener beneficios como biblioteca, cursos, etc.</p>
+                <form action="#" method="post">
+                    <div class="mb-3">
+                        <label for="usuario" class="form-label">Ingrese su número de DNI:</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="usuario">
+                            <span class="input-group-text"><i class="bi bi-pencil"></i></span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Contraseña:</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="password">
+                            <span class="input-group-text"><i class="bi bi-eye-slash"></i></span>
+                        </div>
+                    </div>
+                    <div class="mb-3 text-center">
+                        ¿Olvidaste tu contraseña? Recupera tu usuario/contraseña <a href="#">aquí</a>
+                    </div>
+                    <div class="mb-3">
+                        <div class="g-recaptcha" data-sitekey="6LcuPXMUAAAAAKhrGz-PIZu0WOREapr20mklne_U" data-callback="recaptcha_callback"></div>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary w-100 fs-6">Ingresar</button>
+                    </div>
+                    <div class="text-center">
+                        ¿Usuario nuevo? <a href="#">Regístrese</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js' type="text/javascript"></script>
 </body>
 
 </html>

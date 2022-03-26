@@ -1,159 +1,245 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
-
-:root {
-    --primary: #0d6efd;
-    --dark: #21252f;
-    --body: #888;
-    --box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
-}
+@import url('http://fonts.cdnfonts.com/css/gotham');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
-    font-family: Sora, "sans-serif";
+    font-family: "Gotham";
+    font-size: 14px;
 }
 
-h1, h2, h3, h4, h5, h6, display-4 {
-    color: var(--dark);
-    font-weight: 700 !important;
+.fondo-login {
+    background: linear-gradient(0deg, rgba(46, 139, 231, 0.28), rgba(46, 139, 231, 0.28)), url(../images/fondo_login.jpg);
 }
 
-a {
-    color: var(--dark);
-    text-decoration: none;
+#cabecera {
+    height: 70px;
 }
 
-.navbar {
-    box-shadow: var(--box-shadow);
-}
-
-.navbar .logo {
+#cabecera img {
     height: 50px;
 }
 
-.navbar .nav-link {
+#contenido, #pie {
+    padding: 36px 0
+}
+
+#login {
+    width: 439px;
+    height: 588px;
+    border-radius: 21px;
+    padding: 35px 61px
+}
+
+.titulo-login {
+    color: #1976D2;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.form-label {
+    font-family: 'Poppins';
+}
+
+.form-control, .form-select {
+    border: 1px solid #1976d2;
+    border-radius: 14px;
     font-size: 14px;
-    font-weight: 700;
+}
+
+.input-group > .form-control {
+    border-right-width: 0;
+}
+
+.input-group > .input-group-text {
+    background: transparent;
+    border: 1px solid #1976d2;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    color: #1976d2;
+}
+
+.input-group > .btn {
+    padding: .375rem .75rem;
+    border-radius: .25rem;
 }
 
 .btn {
-    padding: 14px 18px;
-    border-width: 2px;
-    border-radius: 0;
+    padding: 0.375rem 21px;
+    border-radius: 21px;
+    font-size: 14px;
 }
 
-.dropdown-menu {
-    border-radius: 0;
+.btn-lg {
+    padding: .5rem 21px;
+    font-size: 16px;
+}
+
+.btn-sm {
+    padding: 0.35rem 14px;
+    font-size: 12px;
+}
+
+.busqueda .form-control {
+    min-width: 300px;
+}
+
+.busqueda .btn {
+    margin-left: -16px !important;
+}
+
+.btn-primary {
+    background-color: #1976D2;
+    border-color: #1976D2;
+}
+
+.card .btn-primary {
+    background-color: #253e7b;
+    border-color: #253e7b;
+}
+
+.btn-danger {
+    background-color: #ff213a;
+    border-color: #ff213a;
+}
+
+.bg-primary {
+    background-color: #253e7b !important;
+}
+
+.bg-danger {
+    background-color: #e61e74 !important;
+}
+
+.bg-dark {
+    background-color: #333 !important;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.text-primary {
+    color: #224f98 !important;
+}
+
+fieldset {
+    padding: 0 72px;
+}
+
+fieldset > legend {
+    color: #1976d2;
+    font-family: 'Poppins';
 }
 
 .seccion {
-    position: relative;
-    padding: 100px 0px;
+    margin: 40px 0 0;
 }
 
-.busqueda {
-    margin-bottom: 40px;
-    margin-top: -55px;
+.modal-header {
+    border-bottom: 0;
 }
 
-.form-input-group {
-    position: relative;
+.modal-footer {
+    border-top: 0;
+    padding-bottom: 36px;
 }
 
-.form-input-group input {
-    height: 70px;
+.card {
+    background: #f8f8f8; 
+    border-width: 0; 
+    border-radius: 21px;
 }
 
-.form-input-group button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 10px;
+.card-header {
+    font-weight: 500; 
+    border-top-left-radius: 21px !important; 
+    border-top-right-radius: 21px !important; 
+    text-align: center; 
+    font-size: 12px;
+    padding: 5px 0;
 }
 
-.login {
-    position: relative;
-    background:linear-gradient(90deg, #fff 55%, rgba(236,236,243,0.6) 45%);
-    display: flex;
-    height: 100vh;
+.card-title {
+    color: #1976d2; 
+    font-size: 14px;
 }
 
-.puntos .puntos-1 {
-    position: absolute;
-    top: 85px;
-    left: 0;
+.card-img-top {
+    border-top-left-radius: 21px !important; 
+    border-top-right-radius: 21px !important; 
 }
 
-.puntos .puntos-2 {
-    position: absolute;
-    bottom: 100px;
-    right: 0
+.card-footer {
+    border-top: 0;
+    background: transparent;
+    padding-bottom: 14px;
 }
 
-.iconbox {
-    height: 70px;
-    width: 70px;
-    margin: auto;
+.carousel-caption {
+    top: 1.25rem;
+}
+
+.carousel-caption p {
+    font-size: 30px;
+}
+
+.carousel-caption h5 {
+    font-size: 30px;
+}
+
+.carousel-caption button {
+    margin-top: 20px;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border: 0;
+    border-radius: 50%;
 }
 
 .servicio {
-    border: 1.5px solid #ebebf2;
-    border-radius: 5px;
+    width: 170px;
+    height: 182px;
+    margin: 0 auto;
+}
+
+[class^="imghvr-"] {
+    background: transparent;
+}
+
+[class^="imghvr-"] figcaption {
     text-align: center;
-    padding: 60px 0px;
-    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px 15px;
 }
 
-.copy {
-    border-top: 1px solid #4b4b57;
-}
+@media (max-width: 575.98px) {
+    #login {
+        width: 100%;
+        border-radius: 21px;
+        padding: 35px 31px
+    }
 
-.mt--5 {
-    margin-top: -110px;
-}
+    #contenido {
+        padding: 36px 10px;
+    }
 
-.filtros .accordion-item {
-    border: 0;
-    border-radius: 5px;
-    margin-bottom: 30px;
-    padding: 0 24px;
-}
+    fieldset {
+        padding: 0;
+    }
 
-.filtros .accordion-button {
-    background-color: transparent;
-}
+    .carousel-caption {
+        top: 0;
+    }
 
-.etiquetas {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+    .carousel-caption h5 {
+        font-size: 12px;
+    }
 
-.etiquetas li {
-    display: inline-block;
-    margin: 0 .3em .3em 0;
-    padding: 0;
-}
-
-.etiquetas li a {
-    display: inline-block;
-    max-width: 100px;
-    padding: 0.5em 1em;
-    background-color: #fff;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: 3px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    font-size: 13px;
-    text-decoration: none;
-}
-
-.border-w-50 {
-    border: 15px solid #ffffff;
-    border-radius: 10px;
-}
-
-@media (max-width: 574px) {
-    .login {
-        background:#fff
+    .carousel-caption button {
+        padding: 0.25rem 10px;
+        margin-top: 0px;
+        font-size: 10px;
     }
 }

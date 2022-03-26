@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidad MIDIS</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!--
+        <link href="http://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="cabecera" class="d-flex align-items-center bg-white">
+        <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+            <div class="d-none d-md-block">
+                <img src="images/logo_midis.png" alt="Logo MIDIS">
+                <img src="images/identidad_visual.jpeg" alt="Siempre Con el Pueblo">
+            </div>
+            <div>
+                <img src="images/logo_comunidadmidis.jpg" alt="Logo MIDIS">
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="busqueda me-0 me-lg-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Buscar en Comunidad MIDIS">
+                        <button type="button" class="btn btn-primary rounded-circle">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Preguntas Frecuentes</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="flex-fill btn btn-outline-light me-3">
+                        <i class="bi bi-person-circle"></i> Iniciar Sesión
+                    </button>
+                    <button class="flex-fill btn btn-primary">Regístrese</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="contenido">
+        <div class="container">
+            <h4 class="text-primary">Crear una cuenta</h4>
+            <p class="text-primary">Completa tus datos y forma parte de la comunidad MIDIS</p>
+
+            <form action="">
+                <fieldset>
+                    <legend class="fs-6 text-primary">Datos personales :</legend>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="input1" class="form-label text-primary">Tipo de documento :</label>
+                            <select class="form-select">
+                                <option value="1">DNI</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="usuario" class="form-label text-primary">Número de documento :</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="usuario" placeholder="44064234">
+                                <span class="input-group-text"><i class="bi bi-pencil"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="usuario" class="form-label text-primary">Nombre :</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="usuario" placeholder="Juan Antonio">
+                                <span class="input-group-text"><i class="bi bi-pencil"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="usuario" class="form-label text-primary">Apellidos :</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="usuario" placeholder="Perez Torres">
+                                <span class="input-group-text"><i class="bi bi-pencil"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label for="usuario" class="form-label text-primary">Sexo :</label>
+                            <div class="text-center">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio1" value="option1">
+                                    <label class="form-check-label text-primary" for="inlineRadio1">Masculino</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="inlineRadio2" value="option1">
+                                    <label class="form-check-label text-primary" for="inlineRadio2">Femenino</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="usuario" class="form-label text-primary">Número celular :</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="usuario" placeholder="994 534 221">
+                                <span class="input-group-text"><i class="bi bi-pencil"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-6 d-flex align-items-center">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label text-primary" for="inlineCheckbox1">He leído y acepto los
+                                    términos
+                                    y condiciones</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="g-recaptcha" data-sitekey="6LcuPXMUAAAAAKhrGz-PIZu0WOREapr20mklne_U"
+                                data-callback="recaptcha_callback"></div>
+                        </div>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <button type="button" class="btn btn-primary btn-lg fs-6" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar registro</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <div id="pie" class="bg-dark">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between">
+                <div class="text-center text-md-start">
+                    <p>
+                        <img src="images/logo_midis.png" alt="Logo MIDIS" height="50">
+                    </p>
+                    <p class="small text-white-50">©Ministerio de Desarrollo e Inclusión
+                        <br>Social. Todos los Derechos Reservados.
+                    </p>
+                    <p class="small text-white-50">Sede Central: Av. Paseo de la República
+                        <br>3101 - San Isidro / Sede Palacio: Jirón de
+                        <br>la Unión 264 - Centro de Lima
+                    </p>
+                </div>
+                <div class="text-center text-md-start">
+                    <h3 class="fs-6 text-white">SERVICIOS</h3>
+                    <ul class="list-unstyled small text-white-50">
+                        <li>¿QUÉ HACEMOS?</li>
+                        <li>OFERTA FORMATIVA</li>
+                        <li>BIBLIOTECA VIRTUAL</li>
+                        <li>EVENTOS</li>
+                        <li>CONSTANCIAS</li>
+                        <li>PREGUNTAS FRECUENTES</li>
+                    </ul>
+                </div>
+                <div class="text-center text-md-start">
+                    <h3 class="fs-6 text-white">ATENCIÓN AL USUARIO</h3>
+                    <ul class="list-unstyled small text-white-50">
+                        <li>CENTRAL TELEFÓNICA :</li>
+                        <li>51-1-631-8000 / 51-1-631-8030</li>
+                    </ul>
+                    <p class="small text-white-50">SÍGUENOS :</p>
+                    <p class="text-white-50">
+                        <i class="bi bi-facebook me-2"></i>
+                        <i class="bi bi-twitter me-2"></i>
+                        <i class="bi bi-youtube me-2"></i>
+                    </p>
+                    <img src="images/logoblanco-2.png" alt="Siempre Con el Pueblo" height="50">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-primary text-center">
+                    <p>
+                        <img src="images/success.png" alt="Registro exitoso" class="w-25">
+                    </p>
+                    <h4>¡Registro exitoso!</h4>
+                    <p>Enviamos un correo a <a href="#">juan.perez@gmail.com</a> con las instrucciones que debes seguir para confirmar su registro.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-lg m-auto">De acuerdo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js' type="text/javascript"></script>
+</body>
+
+</html>
