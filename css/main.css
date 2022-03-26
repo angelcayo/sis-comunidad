@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/gotham');
+@import url('../fonts/gotham/stylesheet.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
@@ -7,7 +7,7 @@ body {
 }
 
 .fondo-login {
-    background: linear-gradient(0deg, rgba(46, 139, 231, 0.28), rgba(46, 139, 231, 0.28)), url(../images/fondo_login.jpg);
+    background: linear-gradient(0deg, rgba(46, 139, 231, 0.28), rgba(46, 139, 231, 0.28)), url('../images/fondo_login.jpg');
 }
 
 #cabecera {
@@ -80,7 +80,7 @@ body {
 }
 
 .busqueda .form-control {
-    min-width: 300px;
+    width: 300px;
 }
 
 .busqueda .btn {
