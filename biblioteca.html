@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidad MIDIS</title>
+
+    <link rel="stylesheet" href="vendor/bootstrap-5.1.3-dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendor/icons-1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="vendor/imagehover.css-master/css/imagehover.min.css">
+    <link rel="stylesheet" href="vendor/slick-master/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick-master/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="css/main.css" crossorigin="anonymous">
+</head>
+
+<body id="contenedor">
+    <div id="cabecera" class="d-flex align-items-center bg-white">
+        <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+            <div class="d-none d-md-block">
+                <img src="images/logo_midis.png" alt="Logo MIDIS">
+                <img src="images/identidad_visual.jpeg" alt="Siempre Con el Pueblo">
+            </div>
+            <div>
+                <img src="images/logo_comunidadmidis.jpg" alt="Logo MIDIS">
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="busqueda me-0 me-lg-3 pt-2 pt-lg-0">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Buscar en Comunidad MIDIS">
+                        <button type="button" class="btn btn-primary rounded-circle">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Preguntas Frecuentes</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <div class="text-end me-3">
+                        <p class="username">Roberto Saenz Peña</p>
+                        <a href="#" class="btn btn-primary btn-user">Ver Perfil</a>
+                    </div>
+                    <div class="me-3">
+                        <img src="images/user.png" alt="user" height="36px">
+                    </div>
+                    <span class="navbar-text">
+                        <a href="#">
+                            <img src="images/signout.png" alt="Cerrar Sesión" height="16px">
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="contenido">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#"><i class="bi bi-arrow-left-circle-fill"></i> Inicio</a></li>
+                <li class="breadcrumb-item active">Biblioteca virtual</li>
+            </ol>
+            <div class="row g-3">
+                <div class="col-md-3">
+                    <div class="avatar p-4">
+                        <div class="mb-3">
+                            <h6 class="fs-6 text-primary"><i class="bi bi-grid"></i> Categorías : </h6>
+                            <div class="form-check check-outline-primary">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Desarrollo Infantil Temprano
+                                </label>
+                            </div>
+                            <div class="form-check check-outline-primary">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Desarrollo Integral de la niñez y adolescencia
+                                </label>
+                            </div>
+                            <div class="form-check check-outline-primary">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Inclusión económica
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="fs-6 text-primary"><i class="bi bi-grid"></i> Recursos : </h6>
+                            <div class="form-check check-outline-primary">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Publicación
+                                </label>
+                            </div>
+                            <div class="form-check check-outline-primary">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Cápsula Informativa
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <h3 class="text-primary mb-3">Biblioteca Virtual</h3>
+                    <div class="mb-3">
+                        <div class="row g-3 d-flex align-items-center">
+                            <div class="col-md-4 text-center text-md-end">
+                                <span class="text-primary">¿Qué estas buscando? </span>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="search">
+                                    <span class="input-group-text"><i class="bi bi-pencil"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="text-primary mb-3">Los más visitados</h6>
+                    <div class="mb-3">
+                        <div class="slider responsive">
+                            <div>
+                                <div class="card bg-primary h-100 mx-2 ">
+                                    <img src="images/Group_369.png" class="card-img-top" alt="image 5">
+                                    <div class="card-body">
+                                        <small class="text-warning fw-bold">Publicación 2018</small>
+                                        <h3 class="card-title text-white">Desarrollo infantil temprano en niñas y niños
+                                            menores de
+                                            6 años de edad - ENDES 2018
+                                        </h3>
+                                    </div>
+                                    <div class="card-footer text-start">
+                                        <small class="text-white">10016 vistas</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card bg-primary h-100 mx-2 ">
+                                    <img src="images/Group_369.png" class="card-img-top" alt="image 5">
+                                    <div class="card-body">
+                                        <small class="text-warning fw-bold">Publicación 2018</small>
+                                        <h3 class="card-title text-white">Desarrollo infantil temprano en niñas y niños
+                                            menores de
+                                            6 años de edad - ENDES 2018
+                                        </h3>
+                                    </div>
+                                    <div class="card-footer text-start">
+                                        <small class="text-white">10016 vistas</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card bg-primary h-100 mx-2 ">
+                                    <img src="images/Group_369.png" class="card-img-top" alt="image 5">
+                                    <div class="card-body">
+                                        <small class="text-warning fw-bold">Publicación 2018</small>
+                                        <h3 class="card-title text-white">Desarrollo infantil temprano en niñas y niños
+                                            menores de
+                                            6 años de edad - ENDES 2018
+                                        </h3>
+                                    </div>
+                                    <div class="card-footer text-start">
+                                        <small class="text-white">10016 vistas</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card bg-primary h-100 mx-2 ">
+                                    <img src="images/Group_369.png" class="card-img-top" alt="image 5">
+                                    <div class="card-body">
+                                        <small class="text-warning fw-bold">Publicación 2018</small>
+                                        <h3 class="card-title text-white">Desarrollo infantil temprano en niñas y niños
+                                            menores de
+                                            6 años de edad - ENDES 2018
+                                        </h3>
+                                    </div>
+                                    <div class="card-footer text-start">
+                                        <small class="text-white">10016 vistas</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="text-primary mb-3">Nuevos</h6>
+                    <div class="mb-3">
+                        <div class="slider responsive">
+                            <div>
+                                <div class="card bg-primary h-100 mx-2 ">
+                                    <img src="images/image_55.png" class="card-img-top" alt="image 5">
+                                    <div class="card-body">
+                                        <small class="text-warning fw-bold">Publicación 2018</small>
+                                        <h3 class="card-title text-white">Situación de las madres adolescentes en
+                                            Huancavelica. Brechas y retos en ocho centros poblados del distrito de Yauli
+                                        </h3>
+                                    </div>
+                                    <div class="card-footer text-start">
+                                        <small class="text-white">10016 vistas</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card bg-primary h-100 mx-2 ">
+                                    <img src="images/image_55.png" class="card-img-top" alt="image 5">
+                                    <div class="card-body">
+                                        <small class="text-warning fw-bold">Publicación 2018</small>
+                                        <h3 class="card-title text-white">Situación de las madres adolescentes en
+                                            Huancavelica. Brechas y retos en ocho centros poblados del distrito de Yauli
+                                        </h3>
+                                    </div>
+                                    <div class="card-footer text-start">
+                                        <small class="text-white">10016 vistas</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card bg-primary h-100 mx-2 ">
+                                    <img src="images/image_55.png" class="card-img-top" alt="image 5">
+                                    <div class="card-body">
+                                        <small class="text-warning fw-bold">Publicación 2018</small>
+                                        <h3 class="card-title text-white">Situación de las madres adolescentes en
+                                            Huancavelica. Brechas y retos en ocho centros poblados del distrito de Yauli
+                                        </h3>
+                                    </div>
+                                    <div class="card-footer text-start">
+                                        <small class="text-white">10016 vistas</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card bg-primary h-100 mx-2 ">
+                                    <img src="images/image_55.png" class="card-img-top" alt="image 5">
+                                    <div class="card-body">
+                                        <small class="text-warning fw-bold">Publicación 2018</small>
+                                        <h3 class="card-title text-white">Situación de las madres adolescentes en
+                                            Huancavelica. Brechas y retos en ocho centros poblados del distrito de Yauli
+                                        </h3>
+                                    </div>
+                                    <div class="card-footer text-start">
+                                        <small class="text-white">10016 vistas</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="text-primary mb-3">Otras publicaciones</h6>
+                    <div class="">
+                        <div class="slider responsive">
+                            <div>
+                                <div class="card bg-primary h-100 mx-2 ">
+                                    <img src="images/Group_370.png" class="card-img-top" alt="image 5">
+                                    <div class="card-body">
+                                        <small class="text-warning fw-bold">Publicación 2018</small>
+                                        <h3 class="card-title text-white">Situación de las madres adolescentes en
+                                            Huancavelica. Brechas y retos en ocho centros poblados del distrito de Yauli
+                                        </h3>
+                                    </div>
+                                    <div class="card-footer text-start">
+                                        <small class="text-white">10016 vistas</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card bg-primary h-100 mx-2 ">
+                                    <img src="images/Group_370.png" class="card-img-top" alt="image 5">
+                                    <div class="card-body">
+                                        <small class="text-warning fw-bold">Publicación 2018</small>
+                                        <h3 class="card-title text-white">Situación de las madres adolescentes en
+                                            Huancavelica. Brechas y retos en ocho centros poblados del distrito de Yauli
+                                        </h3>
+                                    </div>
+                                    <div class="card-footer text-start">
+                                        <small class="text-white">10016 vistas</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card bg-primary h-100 mx-2 ">
+                                    <img src="images/Group_370.png" class="card-img-top" alt="image 5">
+                                    <div class="card-body">
+                                        <small class="text-warning fw-bold">Publicación 2018</small>
+                                        <h3 class="card-title text-white">Situación de las madres adolescentes en
+                                            Huancavelica. Brechas y retos en ocho centros poblados del distrito de Yauli
+                                        </h3>
+                                    </div>
+                                    <div class="card-footer text-start">
+                                        <small class="text-white">10016 vistas</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="card bg-primary h-100 mx-2 ">
+                                    <img src="images/Group_370.png" class="card-img-top" alt="image 5">
+                                    <div class="card-body">
+                                        <small class="text-warning fw-bold">Publicación 2018</small>
+                                        <h3 class="card-title text-white">Situación de las madres adolescentes en
+                                            Huancavelica. Brechas y retos en ocho centros poblados del distrito de Yauli
+                                        </h3>
+                                    </div>
+                                    <div class="card-footer text-start">
+                                        <small class="text-white">10016 vistas</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pie" class="bg-dark">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between">
+                <div class="text-center text-md-start">
+                    <p>
+                        <img src="images/logo_midis.png" alt="Logo MIDIS" height="50">
+                    </p>
+                    <p class="small text-white-50">©Ministerio de Desarrollo e Inclusión
+                        <br>Social. Todos los Derechos Reservados.
+                    </p>
+                    <p class="small text-white-50">Sede Central: Av. Paseo de la República
+                        <br>3101 - San Isidro / Sede Palacio: Jirón de
+                        <br>la Unión 264 - Centro de Lima
+                    </p>
+                </div>
+                <div class="text-center text-md-start">
+                    <h3 class="fs-6 text-white">SERVICIOS</h3>
+                    <ul class="list-unstyled small text-white-50">
+                        <li>¿QUÉ HACEMOS?</li>
+                        <li>OFERTA FORMATIVA</li>
+                        <li>BIBLIOTECA VIRTUAL</li>
+                        <li>EVENTOS</li>
+                        <li>CONSTANCIAS</li>
+                        <li>PREGUNTAS FRECUENTES</li>
+                    </ul>
+                </div>
+                <div class="text-center text-md-start">
+                    <h3 class="fs-6 text-white">ATENCIÓN AL USUARIO</h3>
+                    <ul class="list-unstyled small text-white-50">
+                        <li>CENTRAL TELEFÓNICA :</li>
+                        <li>51-1-631-8000 / 51-1-631-8030</li>
+                    </ul>
+                    <p class="small text-white-50">SÍGUENOS :</p>
+                    <p>
+                        <a href="#" class="text-white-50"><i class="bi bi-facebook me-2"></i></a>
+                        <a href="#" class="text-white-50"><i class="bi bi-twitter me-2"></i></a>
+                        <a href="#" class="text-white-50"><i class="bi bi-youtube me-2"></i></a>
+                    </p>
+                    <img src="images/logoblanco-2.png" alt="Siempre Con el Pueblo" height="50">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog ">
+            <div class="modal-content aviso">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center mb-5">
+                        <img src="images/logo_midis.png" alt="Logo MIDIS" height="50">
+                        <img src="images/logo_comunidadmidis.jpg" alt="Logo MIDIS" height="50">
+                    </div>
+                    <h3 class="fs-5">Estimados/as usuarios,</h3>
+                    <p>El próximo 2 de Julio se dará inicio al</p>
+                    <h3 class="fs-5">
+                        <a href="#" class="text-primary text-decoration-none">CURSO VIRTUAL : Prevención de violencia
+                            contra las mujeres e integrantes del grupo familiar</a>
+                    </h3>
+                    <p>Dirigido a las servidoras y servidores del MIDIS y programas sociales</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-lg m-auto">Ver más del curso</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="vendor/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src='vendor/jquery-3.6.0/dist/jquery.min.js'></script>
+    <script type="text/javascript" src='vendor/slick-master/slick/slick.min.js'></script>
+    <script type="text/javascript" src='https://www.google.com/recaptcha/api.js'></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".responsive").slick({
+                dots: false,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+
+</html>
